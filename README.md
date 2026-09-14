@@ -32,10 +32,6 @@ elaborado, la app es compatible con añadir Tailwind CSS sin reescribir nada.
 
 
 
-
-Abre el enlace que aparece en la terminal (normalmente `http://localhost:5173`)
-y entra con el usuario que creaste en el paso 4 de Supabase.
-
  Estructura del proyecto
 
 ```
