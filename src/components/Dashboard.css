@@ -1,0 +1,64 @@
+.resumen-avisos {
+  display: flex;
+  gap: 16px;
+  margin: 20px 0 28px;
+}
+
+.resumen-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.resumen-numero {
+  font-family: var(--font-titulos);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-texto);
+}
+
+.lista-avisos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fila-aviso {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 20px;
+  border-left: 4px solid var(--color-borde);
+}
+
+.fila-aviso-urgente {
+  border-left-color: var(--color-urgente);
+}
+.fila-aviso-atencion {
+  border-left-color: var(--color-atencion);
+}
+.fila-aviso-info {
+  border-left-color: var(--color-info);
+}
+
+.nombre-paciente-aviso {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--color-texto);
+  font-size: 1.02rem;
+}
+
+.texto-aviso {
+  margin: 2px 0 0;
+  font-size: 0.9rem;
+}
+
+.estado-vacio {
+  text-align: center;
+  padding: 40px 20px;
+}

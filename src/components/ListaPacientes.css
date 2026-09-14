@@ -1,0 +1,96 @@
+.cabecera-lista {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filtros-lista {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.input-busqueda {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-borde);
+  font-family: var(--font-texto);
+}
+
+.filtros-lista select {
+  padding: 10px 14px;
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-borde);
+  background: var(--color-superficie);
+  font-family: var(--font-texto);
+}
+
+.tabla-pacientes {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fila-paciente {
+  display: grid;
+  grid-template-columns: 16px 1.4fr 2fr 1fr;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 12px;
+  text-decoration: none;
+  color: var(--color-texto);
+  border-radius: var(--radio-borde);
+}
+
+.fila-paciente:hover {
+  background: var(--color-fondo);
+}
+
+.fila-paciente + .fila-paciente {
+  border-top: 1px solid var(--color-borde);
+}
+
+.punto-estado {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--color-borde);
+}
+.punto-urgente {
+  background: var(--color-urgente);
+}
+.punto-atencion {
+  background: var(--color-atencion);
+}
+.punto-info {
+  background: var(--color-info);
+}
+.punto-ok {
+  background: var(--color-ok);
+}
+
+.celda-nombre {
+  font-weight: 700;
+}
+
+.celda-avisos {
+  font-size: 0.85rem;
+  color: var(--color-texto-suave);
+  text-align: right;
+}
+
+@media (max-width: 700px) {
+  .fila-paciente {
+    grid-template-columns: 12px 1fr;
+    grid-template-areas:
+      'punto nombre'
+      '. motivos'
+      '. avisos';
+  }
+  .celda-motivos,
+  .celda-avisos {
+    grid-column: 2;
+  }
+}

@@ -1,0 +1,22 @@
+.formulario-paciente {
+  max-width: 560px;
+}
+
+.fila-dos-columnas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.acciones-formulario {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+@media (max-width: 600px) {
+  .fila-dos-columnas {
+    grid-template-columns: 1fr;
+  }
+}

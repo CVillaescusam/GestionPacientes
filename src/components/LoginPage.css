@@ -1,0 +1,27 @@
+.pantalla-login {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.caja-login {
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+}
+
+.caja-login h1 {
+  font-size: 1.6rem;
+}
+
+.caja-login .btn {
+  margin-top: 8px;
+}
+
+.mensaje-error {
+  color: var(--color-urgente);
+  font-size: 0.9rem;
+}

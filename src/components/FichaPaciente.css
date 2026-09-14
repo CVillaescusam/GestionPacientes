@@ -1,0 +1,147 @@
+.enlace-volver {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: var(--color-texto-suave);
+  font-weight: 600;
+}
+
+.cabecera-ficha {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  gap: 12px;
+}
+
+.acciones-cabecera {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.bloque-alertas-ficha {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.ficha-datos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px 24px;
+  margin-bottom: 24px;
+}
+
+.campo-ancho {
+  grid-column: 1 / -1;
+}
+
+.etiqueta-campo {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--color-texto-suave);
+}
+
+.ficha-datos p {
+  margin: 2px 0 0;
+  color: var(--color-texto);
+}
+
+.seccion-ficha {
+  margin-bottom: 20px;
+}
+
+.seccion-ficha h2 {
+  font-size: 1.15rem;
+  margin-bottom: 12px;
+}
+
+/* --- Visitas --- */
+.formulario-visita {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.formulario-visita input,
+.formulario-visita select {
+  padding: 8px 10px;
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-borde);
+  font-family: var(--font-texto);
+}
+
+.formulario-visita input[placeholder] {
+  flex: 1;
+  min-width: 160px;
+}
+
+.lista-visitas {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.lista-visitas li {
+  display: flex;
+  gap: 14px;
+  padding: 10px 0;
+  border-top: 1px solid var(--color-borde);
+  font-size: 0.92rem;
+}
+
+.fecha-visita {
+  font-weight: 700;
+  min-width: 90px;
+}
+
+.tipo-visita {
+  color: var(--color-secundario);
+  font-weight: 600;
+  min-width: 150px;
+}
+
+.notas-visita {
+  color: var(--color-texto-suave);
+}
+
+/* --- Embarazo / Posparto --- */
+.formulario-inicio-embarazo {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.texto-semana {
+  color: var(--color-texto);
+  font-size: 1rem;
+}
+
+.barra-progreso-embarazo {
+  width: 100%;
+  height: 10px;
+  background: var(--color-secundario-suave);
+  border-radius: 999px;
+  overflow: hidden;
+  margin: 8px 0 14px;
+}
+
+.relleno-progreso-embarazo {
+  height: 100%;
+  background: var(--color-acento-rosa);
+}
+
+.acciones-embarazo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
